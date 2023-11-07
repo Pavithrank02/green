@@ -16,7 +16,7 @@
 .moving-image {
   width: 200px; /* Adjust the initial width as needed */
   height: 200px; /* Adjust the initial height as needed */
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }

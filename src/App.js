@@ -6,6 +6,7 @@ import img4 from '../src/images/4.jpg'
 import img5 from '../src/images/5.jpg'
 import img6 from '../src/images/6.jpg'
 import './App.css';
+import Secondary from './components/Secondary';
 
 function App() {
   const [isMovingRight, setIsMovingRight] = useState(false);
@@ -27,6 +28,7 @@ function App() {
           <img src={img6} alt="Image 6" className={`moving-image ${animationName}`} />
       </div>
       <button onClick={startAnimation}>Toggle Direction</button>
+      {isMovingRight ? <Secondary /> : ""}
     </div>
   );
 }
