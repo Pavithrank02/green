@@ -1,7 +1,7 @@
-.App {
-  text-align: center;
-}
 
+.App{
+  margin: 0;
+}
 .column {
   display: flex;
   justify-content: center;
