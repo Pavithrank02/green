@@ -5,8 +5,10 @@ import img3 from '../src/images/3.jpg'
 import img4 from '../src/images/4.jpg'
 import img5 from '../src/images/5.jpg'
 import img6 from '../src/images/6.jpg'
+
 import './App.css';
 import Secondary from './components/Secondary';
+import Side from './components/Side';
 
 function App() {
   const [isMovingRight, setIsMovingRight] = useState(false);
@@ -19,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <Side />
       <div className={`image-container ${animationName}`}>
           <img src={img1} alt="Image 1" className={`moving-image ${animationName}`} />
           <img src={img2} alt="Image 2" className={`moving-image ${animationName}`} />

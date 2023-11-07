@@ -1,0 +1,12 @@
+.secondary{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15;
+  left: 50vw;
+}
+.first{
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  width: 60vw;
+}
