@@ -17,8 +17,11 @@ const Side = () => {
         <h1>HOME </h1>
       </div>
       <div className='rotated'>
-        <p className='rotated-text'>Solutions</p>
+        <p className='rotated-text'>SOLUTIONS</p>
       </div>
+      <button className='button'>
+      <div class="long-arrow-right"></div>
+         </button>
     </div>
   )
 }
