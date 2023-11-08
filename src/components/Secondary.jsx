@@ -6,6 +6,10 @@ const Secondary = () => {
   return (
     <div className='secondary'>
       <div className='top'>
+        <div className='btn'>
+
+          <button  >Back</button>
+        </div>
         <div className='left-blk'>
           <h3>POWERING</h3>
           <h2> Home</h2>
@@ -15,7 +19,7 @@ const Secondary = () => {
           </div>
         </div>
         <div className='right-blk'>
-          <img src={img7} alt='home' className='right-img'/>
+          <img src={img7} alt='home' className='right-img' />
         </div>
       </div>
       <div className='bottom'>

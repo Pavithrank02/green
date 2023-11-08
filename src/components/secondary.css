@@ -1,7 +1,7 @@
 .secondary{
   display: flex;
   flex-direction: column;
-  margin-top: 15vh;
+  margin-top: 10vh;
   width: 50vw;
   height: 40vh;
 }
@@ -12,7 +12,7 @@
 .left-blk{
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  width: 40vw;
   font-size: medium;
 }
 .left-blk >h2{
@@ -25,18 +25,19 @@
   
 }
 .right-img{
-  margin-top: 16vh;
-  height: 50vh;
+  margin-top: 10vh;
+  height: 57vh;
   margin-left: 30px;
-  width: 20vw;
+  width: 30vw;
 }
 .first{
   display: flex;
   justify-content: center;
   text-align: justify;
+  margin-top: -1rem;
 }
 .second{
   text-align: justify;
-  width: 42vw;
+  width: 50vw;
   right: 50vw;
 }

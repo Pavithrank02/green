@@ -6,10 +6,11 @@ const Side = () => {
   const startAnimation = () => {
     setIsTransition(!isTransition);
   };
+  const animationName = isTransition ? 'small-image' : ''
   return (
     <div className='side'>
       <div  className='img-'>
-        <img src={img8} alt="Image 8" className={isTransition ? 'small-image' : ''}  />
+        <img src={img8} alt="Image 8" className={`img- ${animationName}`}  />
       </div>
       <div className='logo'>
         <h1>GREEN</h1>
