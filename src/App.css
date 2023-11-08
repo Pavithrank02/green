@@ -1,51 +1,19 @@
 
 .App{
-  margin: 0;
-  column-span: 2;
-}
-.column {
-  display: flex;
-  justify-content: center;
-}
-
-.image-column {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  column-count: 2;
+  column-gap: 2vw;
+}
+.left {
+  width: 30%;
 }
 
-.moving-image {
-  width: 200px; /* Adjust the initial width as needed */
-  height: 200px; /* Adjust the initial height as needed */
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
+.right {
+  width: 70%;
+  margin-top: 15vh;
 }
 
-.moveRight {
-  animation-name: moveRight;
-}
-
-.moveLeft {
-  animation-name: moveLeft;
-}
-
-@keyframes moveRight {
-  0% {
-    transform: translate(100%, 0) scale(1);
-  }
-  100% {
-    transform: translate(0, 100%) scale(0.7);
-  }
-}
-@keyframes moveLeft {
-  0% {
-    transform: translate(0, 100%) scale(0.7);
-  }
-  100% {
-    transform: translate(100%, 0) scale(1);
-  }
-}
 
 
 
