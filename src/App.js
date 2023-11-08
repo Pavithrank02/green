@@ -16,12 +16,12 @@ function App() {
   return (
     <div className="App">
       <div className='left'>
-      <Side />
+        {/* <Side /> */}
       </div>
       <div className='right'>
-      <ImageConainer animationName={animationName} startAnimation= {startAnimation}/>
+        <ImageConainer animationName={animationName} startAnimation={startAnimation} />
       </div>
-      {isMovingRight ? <Secondary /> : ""}
+      {isMovingRight && <Secondary />}
     </div>
   );
 }

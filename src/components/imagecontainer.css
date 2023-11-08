@@ -30,16 +30,29 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: -2rem;
+}
+.image-container{
+  margin-left: -3rem;
+  height: 50vh;
+  width: 75vw;
+  overflow-x: scroll;
+  overflow: visible;
+  scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 .moving-image {
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   width: 15vw;
   height: 50vh;
-  padding-right: 1rem;
   cursor: pointer;
+  margin: 10px;
+  border-radius: 6%;
   
 }
 .moving-image:hover{

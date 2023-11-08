@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img8 from '../images/8.jpg'
 import './side.css'
 const Side = () => {
+  const [isTransition, setIsTransition] = useState(false)
+  const startAnimation = () => {
+    setIsTransition(!isTransition);
+  };
   return (
     <div className='side'>
-      <div >
-        <img src={img8} alt="Image 8"className='img8' />
+      <div  className='img-'>
+        <img src={img8} alt="Image 8" className={isTransition ? 'small-image' : ''}  />
       </div>
       <div className='logo'>
         <h1>GREEN</h1>
@@ -19,9 +23,9 @@ const Side = () => {
       <div className='rotated'>
         <p className='rotated-text'>SOLUTIONS</p>
       </div>
-      <button className='button'>
-      <div class="long-arrow-right"></div>
-         </button>
+      <button onClick={startAnimation} className='button'>
+        <div class="long-arrow-right"></div>
+      </button>
     </div>
   )
 }

@@ -7,18 +7,22 @@ import img5 from '../images/5.jpg'
 import img6 from '../images/6.jpg'
 import './imagecontainer.css'
 
-const ImageConainer = ({startAnimation, animationName}) => {
+const ImageConainer = ({ startAnimation, animationName }) => {
   return (
     <div className='image-containers'>
+      <button onClick={startAnimation}>Toggle Direction</button>
       <div className='image-container-top'>
         <div className='image-container-top-left'>
-        <p className=''>LOREM IPSUM</p>
-        <p className='image-container-top-left-p'>LOREM IPSUM</p>
+          <p className=''>LOREM IPSUM</p>
+          <p className='image-container-top-left-p'>LOREM IPSUM</p>
         </div>
         <div className='image-container-top-right'>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-        <p>Learn More</p>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+          <p>Learn More</p>
         </div>
+      </div>
+      <div>
+        
       </div>
       <div className={`image-container ${animationName}`}>
         <img src={img1} alt="Image 1" className={`moving-image ${animationName}`} />
@@ -28,7 +32,7 @@ const ImageConainer = ({startAnimation, animationName}) => {
         <img src={img5} alt="Image 5" className={`moving-image ${animationName}`} />
         <img src={img6} alt="Image 6" className={`moving-image ${animationName}`} />
       </div>
-      <button onClick={startAnimation}>Toggle Direction</button>
+
     </div>
   )
 }

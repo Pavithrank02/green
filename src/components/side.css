@@ -1,9 +1,15 @@
-.img8 {
+.side{
+  position: fixed;
+}
+img {
   height: 100vh;
   width: 30vw;
   position: fixed;
-  left: 0;
-  object-fit: fill;
+  transition: height 2s; /* Add a smooth transition effect */
+}
+
+.small-image {
+  height: 63%; /* Half the size */
 }
 
 .logo {
@@ -39,7 +45,7 @@
   margin-top: 20vh;
   margin-left: -4rem;
   margin-right: 0;
-  opacity: 40%;
+  opacity: 30%;
   font-weight: bolder;
   writing-mode: vertical-lr;
   transform: scale(-1, -1);
@@ -47,7 +53,7 @@
 
 .rotated-text {
   font-size: 13vh;
-  -webkit-text-fill-color: gray;
+  -webkit-text-fill-color: rgb(157, 157, 157);
   -webkit-text-stroke: 3px white;
 }
 .button{
