@@ -6,6 +6,7 @@ import img4 from '../images/4.jpg'
 import img5 from '../images/5.jpg'
 import img6 from '../images/6.jpg'
 import './imagecontainer.css'
+import 'animate.css';
 
 const ImageConainer = ({ startAnimation, animationName }) => {
   return (
@@ -21,7 +22,7 @@ const ImageConainer = ({ startAnimation, animationName }) => {
         </div>
       </div>
       <div className='image-container-bottom'>
-        <div className={`image-container `}>
+        <div className='image-container'>
           <img src={img1} alt="Image 1" className={`moving-image ${animationName}`} />
           <img src={img2} alt="Image 2" className={`moving-image ${animationName}`} />
           <img src={img3} alt="Image 3" className={`moving-image ${animationName}`} />
