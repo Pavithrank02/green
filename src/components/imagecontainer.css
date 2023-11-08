@@ -39,7 +39,7 @@
   flex-direction: row;
   height: 60vh;
   width: 100%;
-  margin-left: 5rem;
+  margin-left: 19rem;
 }
 
 .moving-image {
@@ -59,7 +59,7 @@
   margin-left: -15rem;
   height: 20vh;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow: visible;
   scroll-behavior: smooth;
 }

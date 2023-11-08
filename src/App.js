@@ -16,11 +16,11 @@ function App() {
   return (
     <div className="App">
       <div className='left'>
-        <Side />
+        <Side animationName={animationName}/>
       </div>
       <div  className='right'>
         {!isMovingRight ? (<div>
-          <ImageConainer animationName={animationName} startAnimation={startAnimation} />
+          <ImageConainer  startAnimation={startAnimation} />
         </div>)
         :  <Secondary />}
       </div>

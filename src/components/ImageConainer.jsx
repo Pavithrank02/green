@@ -21,7 +21,7 @@ const ImageConainer = ({ startAnimation, animationName }) => {
         </div>
       </div>
       <div className='image-container-bottom'>
-        <div className='image-container'>
+        <div className={`image-container `}>
           <img src={img1} alt="Image 1" className={`moving-image ${animationName}`} />
           <img src={img2} alt="Image 2" className={`moving-image ${animationName}`} />
           <img src={img3} alt="Image 3" className={`moving-image ${animationName}`} />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import img8 from '../images/8.jpg'
 import './side.css'
+import ImageConainer from './ImageConainer'
 const Side = () => {
   const [isTransition, setIsTransition] = useState(false)
   const startAnimation = () => {
@@ -28,6 +29,7 @@ const Side = () => {
         <div class="long-arrow-right"></div>
       </button>
     </div>
+    
   )
 }
 
