@@ -1,6 +1,7 @@
 
 .App{
   margin: 0;
+  column-span: 2;
 }
 .column {
   display: flex;
