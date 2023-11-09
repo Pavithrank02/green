@@ -7,7 +7,7 @@ const Secondary = () => {
     <div className='secondary'>
       <div className='top'>
         <div className='btn'>
-          <button  >Back</button>
+          <button >Back</button>
         </div>
         <div className='left-blk'>
           <h3>POWERING</h3>

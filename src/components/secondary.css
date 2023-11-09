@@ -6,6 +6,11 @@
   height: 40vh;
   margin-left: 6rem;
 }
+.btn > button{
+  margin-top: 13vh;
+  margin-left: -3vw;
+  margin-right: 6vh;
+}
 .top{
   display: flex;
   flex-direction: row;
