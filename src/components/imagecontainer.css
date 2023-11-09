@@ -23,9 +23,11 @@
   font-size: 2.5rem;
   width: 20vw;
   font-weight: bolder;
+  overflow: hidden;
 }
 .image-container-top-left-p{
   margin-top: -1rem;
+  overflow: hidden;
 }
 .image-container-top-right > p{
   display: flex;
@@ -34,6 +36,7 @@
   width: 20vw;
   font-weight: lighter;
   text-align: justify;
+  overflow: hidden;
 
 }
 

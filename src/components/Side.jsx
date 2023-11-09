@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import img8 from '../images/8.jpg'
 import './side.css'
 import ImageConainer from './ImageConainer'
-const Side = () => {
+const Side = ({startAnimations}) => {
   const [isTransition, setIsTransition] = useState(false)
   const startAnimation = () => {
     setIsTransition(!isTransition);
+    startAnimations()
   };
   const animationName = isTransition ? 'small-image' : ''
   return (
