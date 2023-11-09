@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img7 from '../images/7.jpg'
 import './secondary.css'
 
-const Secondary = () => {
-  return (
+const Secondary = ({startAnimations}) => {
+  const [isTransition, setIsTransition] = useState(false)
+  const startAnimation = () => {
+    startAnimations()
+    setIsTransition(!isTransition)
+  };
+  return (  
     <div className='secondary'>
       <div className='top'>
         <div className='btn'>
-          <button >Back</button>
+          <button onClick={startAnimation}>Back</button>
         </div>
         <div className='left-blk'>
           <h3>POWERING</h3>

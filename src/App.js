@@ -22,7 +22,7 @@ function App() {
         {!isMovingRight ? (<div>
           <ImageConainer  animationName={animationName} startAnimation={startAnimations} />
         </div>)
-        :  <Secondary />}
+        :  <Secondary startAnimations={startAnimations}/>}
       </div>
     </div>
   );
